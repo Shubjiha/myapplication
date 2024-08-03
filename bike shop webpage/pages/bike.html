@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikes - Bike Shop</title>
+    <style>
+        .nav-content{
+                display: flex;
+                column-gap: 90px;
+                list-style-type: none;
+            }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 2px;
+            padding: 2px;
+            background-color: #f0f2f7;
+            background-image: url('bike1.jpg'); 
+             background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #defd51;
+            padding: 10px ;
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(68, 68, 68, 0.8);
+            color:  #ff6060;
+            text-align: center;
+            padding: 10px 0
+        }
+        nav a {
+            color: #ff6060;
+            text-decoration: none;
+            list-style-type: none;
+            column-gap: 3;
+            margin: 15px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(248, 171, 127);
+            border-radius: 8px;
+            box-shadow: 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #ada6a6;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .bike-item {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #c6b4df;
+            border-radius: 5px;
+            background-color: rgba(159, 193, 245, 0.9);
+        }
+        .bike-item img {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+        .bike-item .bike-info {
+            flex: 1;
+        }
+        .login-required {
+            display: none;
+        }
+        .logged-in .login-required {
+            display: block;
+        }
+        #home{
+            background: url("../image/walpaper.jpg");
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Bike Shop</h1>
+    </header>
+
+    <nav>
+        <ul class="nav-content">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Bikes</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+        <span id="login-status">Not logged in</span>
+    </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Explore Our Bike Selection</h2>
+        <div class="bike-item">
+            <img src="../image/bikes1.jpeg" alt="Mountain Bike">
+            <div class="bike-info">
+                <h3>Mountain Bike</h3>
+                <p>A sturdy bike built for rough terrains and adventurous trails.</p>
+                <p>Price: $999</p>
+            </div>
+        </div>
+        <div class="bike-item">
+            <img src="../image/bike2.jpg" alt="Road Bike">
+            <div class="bike-info">
+                <h3>Road Bike</h3>
+                <p>A lightweight bike ideal for speed and long-distance rides.</p>
+                <p>Price: $1499</p>
+            </div>
+        </div>
+    <section>
+        <div class="login-required">
+            <p>You need to <a href="login.html">login</a> to view more bikes or special offers.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Our Bike Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function login() {
+            document.getElementById('login-status').innerText = 'Logged in';
+            document.body.classList.add('logged-in');
+        }
+
+        function logout() {
+            document.getElementById('login-status').innerText = 'Not logged in';
+            document.body.classList.remove('logged-in');
+        }
+    </script>
+    </section>
+
+</body>
+</html>

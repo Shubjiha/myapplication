@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 2px;
+            padding: 2px;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #99fc6c;
+            padding: 10px ;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #dcff8a;
+            text-align: center;
+            padding: 10px ;
+        }
+        nav a {
+            color: #f0a5a5;
+            text-decoration: none;
+            margin:  15px;
+            list-style-type: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #efff96;
+            border-radius: 8px;
+            box-shadow: 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #faa85c;
+            text-align: center;
+            padding: 10px ;
+            position: fixed;
+            bottom: 10;
+            width: 100%;
+        }
+        .bike-item {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #78dcfaa8;
+            border-radius: 5px;
+            background-color: #ffddf0;
+        }
+        .bike-item img {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+        .bike-item .bike-info {
+            flex: 1;
+        }
+        .img{
+            width: 90%;
+            margin: 2%;
+            position: absolute;
+        }
+        #home{
+            background: url("image/walpaper.jpg");
+        }
+        #about{
+            background: url("image/walpaper.jpg");
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Bike Shop</h1>
+    </header>
+
+    <nav>
+        <ul>
+           <a href="index.html" aria-current="pages"></a>
+           <a href="./pages/home.html">Home</a>
+           <a href="./pages/login.html">Bikes</a>
+           <a href="./pages/register.html">Register</a>
+           <a href="./pages/bike.html">Login</a>
+            </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Explore Our Bike Selection</h2>
+        <div class="bike-item">
+            <img src="./image/bikes1.jpeg" alt="Mountain Bike">
+            <div class="bike-info">
+                <h3>Mountain Bike</h3>
+                <p>A sturdy bike built for rough terrains and adventurous trails.</p>
+                <p>Price: $999</p>
+            </div>
+        </div>
+        <div class="bike-item">
+            <img src="./image/bike2.jpg" alt="Road Bike">
+            <div class="bike-info">
+                <h3>Road Bike</h3>
+                <p>A lightweight bike ideal for speed and long-distance rides.</p>
+                <p>Price: $1499</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Our Bike Shop</h2>
+        <p>We are passionate about cycling and offer a wide range of bikes to suit every rider's needs.</p>
+        <p>Visit us to explore our collection and find your perfect bike!</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Our Bike Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

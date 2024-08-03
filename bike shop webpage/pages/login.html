@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bike Shop</title>
+    <style>
+        .nav-content{
+                display: flex;
+                column-gap: 90px;
+                list-style-type: none;
+            }
+            nav {
+            background-color: rgba(68, 68, 68, 0.8);
+            color:  #ff6060;
+            text-align: center;
+            padding: 20px 30px;
+        }
+        nav a {
+            color: #ff6060;
+            text-decoration: none;
+            list-style-type: none;
+            column-gap: 3;
+            margin: 15px;
+        }
+        header {
+            background-color: #333;
+            color: #47e24f;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        /* Additional styles specific to login page */
+        form {
+            max-width: 300px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fcabab;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        }
+        form label, form input {
+            display: block;
+            margin-bottom: 10px;
+        }
+        form input[type="text"], form input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #333;
+            color: #fff;
+            padding: 9px 9px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #home{
+            background: url("../image/bike1.jpg");
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin:9px ;
+            padding: 400px;
+            color: rgb(25, 24, 48);
+        }
+        #hmo{
+            background-color: #635f5f;
+            padding: 30px 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Login to Your Account</h1>
+    </header>
+
+    <nav>
+        <ul class="nav-content">
+        <a href="home.html">Home</a>
+        <a href="bike.html">Bikes</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">LOGIN</a>
+    </ul>
+    </nav>
+</br>
+</br>
+</br>
+<section id="home">
+    <form action="login_process.php" method="POST">
+        <label for="username">Username or Email:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button onclick="alert('login sucessful')">Login</button>
+    </form>
+</section>
+</br>
+</br>
+</br>
+<section id="hmo">
+    <footer>
+        <p>&copy; 2024 Our Bike Shop. All rights reserved.</p>
+    </footer>
+    </section>
+</body>
+</html>
